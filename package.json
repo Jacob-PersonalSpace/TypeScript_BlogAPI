@@ -1,0 +1,25 @@
+{
+  "name": "blogAPI",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/Jacob-PersonalSpace/TypeScript_BlogAPI.git",
+  "author": "fjh920605@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon -e ts --exec \"./node_modules/.bin/ts-node ./src/app.ts\"",
+    "build": "./node_modules/.bin/tsc"
+  },
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.25",
+    "@types/koa-router": "^7.0.23",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  }
+}
