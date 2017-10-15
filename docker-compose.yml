@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    command: bash -c "yarn server"
+    environment:
+      NODE_ENV: "development"
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

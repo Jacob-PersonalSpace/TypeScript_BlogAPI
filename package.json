@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "./node_modules/.bin/nodemon -e ts --exec \"./node_modules/.bin/ts-node ./src/app.ts\"",
-    "build": "./node_modules/.bin/tsc"
+    "build": "./node_modules/.bin/tsc",
+    "server": "node ./build/app.js"
   },
   "dependencies": {
     "@koa/cors": "^2.2.1",

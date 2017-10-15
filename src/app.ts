@@ -14,6 +14,6 @@ let router = new Router();
 router.use('/api/regist', registRouter.routes(), registRouter.allowedMethods());
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(8007, () => {
-    console.log(`[demo] start-quick is starting at port 8007`);
+app.listen(3000, () => {
+    console.log(`[demo] start-quick is starting at port 3000`);
 });
