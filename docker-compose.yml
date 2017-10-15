@@ -1,6 +1,12 @@
 version: "2"
 
 services:
+  frontend:
+    image: vue-docker:latest
+    ports:
+      - "9000:9000"
+    environment:
+      NODE_ENV: "development"
   web:
     build: .
     ports:
