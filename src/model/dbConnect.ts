@@ -4,7 +4,7 @@ import * as bluebird from 'bluebird';
 
 (<any>mongoose).Promise = bluebird;
 
-const DB_URL = "mongodb://localhost:27017/Blog_dev";
+const DB_URL = "mongodb://mongo:27017/Blog_dev";
 
 /**
  * 连接
